@@ -232,23 +232,23 @@
         <div>
             <h2 style="font-family: 'Orbitron'; font-size: 2rem; color: #fff; margin-bottom: 20px;">Non è solo Scraping.<br>È Comprensione.</h2>
             <p style="color: var(--text-muted); margin-bottom: 20px;">
-                I database tradizionali usano codici ATECO generici. Se cerchi "Trasporti", ti danno tutto: dal padroncino alla multinazionale.
+                I database tradizionali usano codici ATECO obsoleti. Se cerchi un target specifico, ti ritrovi con migliaia di risultati irrilevanti e fuori target.
             </p>
             <p style="color: var(--text-muted);">
-                <strong>B2B Scout usa l'IA Generativa</strong> per leggere il sito web di ogni azienda e capire esattamente cosa fa.
-                Cerchi solo chi ha celle frigo? O solo chi fa tratte internazionali? 
-                Il nostro algoritmo lo capisce.
+                <strong>B2B Scout usa l'IA Generativa</strong> per leggere il sito web di ogni azienda e capire esattamente cosa fa, in tempo reale.
+                Cerchi aziende con specifiche certificazioni, tecnologie o capacità produttive? 
+                Il nostro algoritmo le trova per te.
             </p>
         </div>
 
         <div class="terminal-window">
-            <div class="term-line"><span class="term-cmd">></span> TARGET: LOGISTICA_VENETO</div>
-            <div class="term-line"><span class="term-cmd">></span> STATUS: SCANNING 1,402 DOMAINS...</div>
-            <div class="term-line"><span class="term-cmd">></span> FILTER: "CELLA FRIGO" OR "REFRIGERATO"</div>
+            <div class="term-line"><span class="term-cmd">></span> TARGET: MANIFATTURA_NORD_ITALIA</div>
+            <div class="term-line"><span class="term-cmd">></span> STATUS: SCANNING 2,840 DOMAINS...</div>
+            <div class="term-line"><span class="term-cmd">></span> FILTER: "ISO 9001" AND "STAMPA 3D"</div>
             <div class="term-line">... Analyzing content (Semantic Check) ...</div>
-            <div class="term-line"><span class="term-success">[MATCH]</span> Rossi Trasporti SRL ("Trasporto farmaci a temperatura controllata")</div>
-            <div class="term-line"><span class="term-cmd" style="color: #ff3333;">[DROP]</span> Bianchi Edilizia ("Noleggio gru")</div>
-            <div class="term-line"><span class="term-cmd">></span> FOUND: 52 HIGH-VALUE LEADS</div>
+            <div class="term-line"><span class="term-success">[MATCH]</span> Precision Tech SRL ("Produzione componenti aerospaziali certificati")</div>
+            <div class="term-line"><span class="term-cmd" style="color: #ff3333;">[DROP]</span> General Store ("Rivendita cancelleria e ufficio")</div>
+            <div class="term-line"><span class="term-cmd">></span> FOUND: 87 HIGH-VALUE LEADS</div>
             <div class="term-line"><span class="term-cmd blink">_</span></div>
         </div>
     </section>
@@ -261,8 +261,8 @@
                 <p class="uc-text">Alimenta le campagne dei tuoi clienti con dati freschi. Offri servizi di Lead Generation basati su dati reali, non su elenchi telefonici morti.</p>
             </div>
             <div class="uc-card">
-                <div class="uc-title">FORNITORI INDUSTRIALI</div>
-                <p class="uc-text">Vendi gomme, assicurazioni o carburante? Ti diciamo noi quali aziende sono attive, quanto sono grandi e se hanno una flotta proprietaria.</p>
+                <div class="uc-title">FORNITORI B2B</div>
+                <p class="uc-text">Vendi prodotti o servizi ad altre aziende? Ti diciamo noi quali sono attive, quali tecnologie utilizzano e se sono realmente in target con la tua offerta.</p>
             </div>
             <div class="uc-card">
                 <div class="uc-title">SOFTWARE VENDORS</div>
@@ -300,7 +300,7 @@
             const email = part1 + '@' + part2 + '.' + part3;
             
             const subject = "Richiesta Accesso Intelligence B2B";
-            const body = "Salve,\nvorrei ricevere un report di esempio sui trasportatori nella mia zona.\n\nIl mio settore è: ...\n";
+            const body = "Salve,\nvorrei ricevere un report di esempio sui target nella mia zona.\n\nIl mio settore è: ...\n";
             
             // Apertura client di posta
             window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
